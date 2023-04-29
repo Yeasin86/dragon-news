@@ -16,7 +16,7 @@ const LeftNav = () => {
       <h4>All Category</h4>
       <div className="mt-5">
         {categories.map((category) => (
-          <p className="text-center" key={category.id}>
+          <p className="" key={category.id}>
             <NavLink
               to={`/category/${category.id}`}
               className={`"w-100 text-center p-4 text-decoration-none text-secondary fw-semibold ${({isActive}) => isActive ? "active" : "default"}`}

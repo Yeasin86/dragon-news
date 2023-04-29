@@ -15,7 +15,9 @@ const Main = () => {
           <Col lg={3}>
             <LeftNav></LeftNav>
           </Col>
-          <Col lg={6}>Main content</Col>
+          <Col lg={6}>
+            <Outlet></Outlet>
+          </Col>
           <Col lg={3}>
             <RightNav></RightNav>
           </Col>
