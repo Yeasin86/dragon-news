@@ -10,12 +10,12 @@ import {
   FaStar,
 } from "react-icons/fa";
 import Rating from "react-rating";
+import MenuBar from "../../shared/MenuBar/MenuBar";
 
 const CategoryNews = ({ news }) => {
   const { _id, title, details, image_url, author, rating, total_view } = news;
   const slicedParagraph = details.split(" ").slice(0, 30).join(" ");
 
-  console.log(news);
   return (
     <div>
       <Card className="mb-4">

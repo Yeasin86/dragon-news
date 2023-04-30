@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import logo from "../../assets/logo.png";
 import moment from "moment";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import Marquee from "react-fast-marquee";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider";
 
-const Header = () => {
+const Header = () => { 
   return (
-    <Container>
+    <Container className="mb-3">
       <div className="text-center">
         <img src={logo} alt="" />
         <p>Journalism Without Fear or Favour</p>
@@ -32,20 +34,6 @@ const Header = () => {
           component, multiple React components, or just some text.
         </Marquee>
       </div>
-
-      <Navbar className="my-2" >
-        <Container>
-          <Nav className="mx-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">About</Nav.Link>
-            <Nav.Link href="#pricing">Career</Nav.Link>
-          </Nav>
-          <div>
-            <img className="img-fluid mx-2" style={{ width: '3rem' }} src="https://i.ibb.co/HBbr8DM/User.png" alt="" />
-            <Button variant="dark">Login</Button>
-          </div> 
-        </Container>
-      </Navbar>
     </Container>
   );
 };
